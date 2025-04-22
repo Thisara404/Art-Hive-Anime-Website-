@@ -1,13 +1,14 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Search, ShoppingCart, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import MobileNav from "./MobileNav";
 import { CATEGORIES } from "@/lib/constants";
+import SearchDialog from "../common/SearchDialog";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -52,41 +53,42 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-1 items-center justify-end gap-2">
-          <form className="hidden md:flex relative w-full max-w-sm items-center">
-            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-            <input
-              type="search"
-              placeholder="Search products..."
-              className="h-10 w-full rounded-md border border-input pl-9 pr-4 bg-background focus:outline-none focus:ring-2 focus:ring-ct-blue-500"
-            />
-          </form>
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            onClick={() => setSearchOpen(true)}
+            aria-label="Search"
+          >
+            <Search className="h-5 w-5" />
+          </Button>
           
-          <div className="flex items-center gap-1">
-            <Link to="/cart">
-              <Button variant="ghost" size="icon" aria-label="Cart">
-                <ShoppingCart className="h-5 w-5" />
-              </Button>
-            </Link>
-            <Link to="/auth">
-              <Button variant="ghost" size="icon" aria-label="User Account">
-                <User className="h-5 w-5" />
-              </Button>
-            </Link>
-            <Button 
-              variant="ghost" 
-              size="icon" 
-              className="md:hidden" 
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle Menu"
-            >
-              {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          <Link to="/cart">
+            <Button variant="ghost" size="icon" aria-label="Cart">
+              <ShoppingCart className="h-5 w-5" />
             </Button>
-          </div>
+          </Link>
+          <Link to="/auth">
+            <Button variant="ghost" size="icon" aria-label="User Account">
+              <User className="h-5 w-5" />
+            </Button>
+          </Link>
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="md:hidden" 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle Menu"
+          >
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </Button>
         </div>
       </div>
       
       {/* Mobile Navigation */}
       {mobileMenuOpen && <MobileNav />}
+      
+      {/* Search Dialog */}
+      <SearchDialog isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </header>
   );
 };
