@@ -61,7 +61,47 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Create & Trade custom colors
+				'ct-blue': {
+					50: '#e9f4ff',
+					100: '#d0e7ff',
+					200: '#abd1ff',
+					300: '#75b3ff',
+					400: '#3d87ff',
+					500: '#1f5eff', // Primary blue
+					600: '#0e3cda',
+					700: '#132fb0',
+					800: '#162a8f',
+					900: '#182d75',
+					950: '#111a41',
+				},
+				'ct-teal': {
+					50: '#e9fff7',
+					100: '#ccfee9',
+					200: '#9efad8',
+					300: '#63f0c6',
+					400: '#2be0ae',
+					500: '#0dc797', // Sri Lankan teal
+					600: '#069f7a',
+					700: '#098063',
+					800: '#0c6650',
+					900: '#0e5342',
+					950: '#032f26',
+				},
+				'ct-amber': {
+					50: '#fefbe8',
+					100: '#fff8c2',
+					200: '#ffee89',
+					300: '#ffde45',
+					400: '#ffcf18',
+					500: '#f5b800', // Sri Lankan gold
+					600: '#d78e00',
+					700: '#b16600',
+					800: '#925007',
+					900: '#7c410c',
+					950: '#462001',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
