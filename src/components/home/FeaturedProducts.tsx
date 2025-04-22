@@ -1,11 +1,16 @@
-
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Heart, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PRODUCTS } from "@/lib/constants";
 
-// Only get featured products
+const productImages = [
+  "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
+];
+
 const featuredProducts = PRODUCTS.filter(product => product.featured);
 
 const formatPrice = (price: number) => {
@@ -32,12 +37,12 @@ const FeaturedProducts = () => {
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {featuredProducts.map((product) => (
+          {featuredProducts.map((product, index) => (
             <Card key={product.id} className="overflow-hidden group transition-all duration-300 hover:shadow-md">
               <div className="relative">
                 <Link to={`/product/${product.slug}`}>
                   <img 
-                    src={product.thumbnail} 
+                    src={productImages[index % productImages.length]} 
                     alt={product.title} 
                     className="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
                   />

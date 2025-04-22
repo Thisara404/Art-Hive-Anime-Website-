@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -92,7 +91,7 @@ const Hero = () => {
               <div className="border-2 border-ct-teal-500 bg-gradient-to-br from-white to-ct-blue-50 rounded-xl p-2 shadow-lg">
                 <div className="relative overflow-hidden rounded-lg">
                   <img
-                    src="/placeholder.svg"
+                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
                     alt="Digital content marketplace"
                     className="w-full max-w-md h-auto object-cover"
                   />
