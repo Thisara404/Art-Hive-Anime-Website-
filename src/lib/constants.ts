@@ -1,14 +1,11 @@
-
 // Categories
 export const CATEGORIES = [
   { id: 1, name: "Digital Art", slug: "digital-art" },
-  { id: 2, name: "E-books", slug: "e-books" },
-  { id: 3, name: "Templates", slug: "templates" },
-  { id: 4, name: "Music", slug: "music" },
-  { id: 5, name: "Video Content", slug: "video-content" },
-  { id: 6, name: "3D Models", slug: "3d-models" },
-  { id: 7, name: "Courses", slug: "courses" },
-  { id: 8, name: "Photography", slug: "photography" }
+  { id: 2, name: "Comic Books", slug: "comic-books" },
+  { id: 3, name: "Wall Arts", slug: "wall-arts" },
+  { id: 4, name: "Anime Books", slug: "anime-books" },
+  { id: 5, name: "Anime Arts", slug: "anime-arts" },
+  { id: 6, name: "Sketch Arts", slug: "sketch-arts" }
 ];
 
 // Mock Products
