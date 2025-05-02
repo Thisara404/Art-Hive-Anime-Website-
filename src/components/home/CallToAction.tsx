@@ -1,10 +1,7 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-
 const CallToAction = () => {
-  return (
-    <section className="py-12 md:py-24 bg-ct-blue-500">
+  return <section className="py-12 md:py-24 bg-ct-blue-500">
       <div className="container px-4 md:px-6 mx-auto">
         <div className="grid gap-6 lg:grid-cols-2 items-center">
           <div>
@@ -26,42 +23,21 @@ const CallToAction = () => {
           </div>
           <div className="relative rounded-lg p-6 bg-white/10 backdrop-blur-sm border border-white/20 mx-auto max-w-md w-full">
             <div className="space-y-4">
-              <h3 className="text-xl font-medium text-white">Why Create & Trade?</h3>
+              <h3 className="text-xl font-medium text-white">Why Art Hive?</h3>
               <ul className="space-y-3">
-                {[
-                  "User-friendly platform for digital content creators",
-                  "Secure transactions with Sri Lankan Rupees (LKR) support",
-                  "Social engagement features to grow your audience",
-                  "Diverse categories for all types of digital content",
-                  "Simple upload and management of your digital products"
-                ].map((feature, index) => (
-                  <li key={index} className="flex items-start">
+                {["User-friendly platform for digital content creators", "Secure transactions with Sri Lankan Rupees (LKR) support", "Social engagement features to grow your audience", "Diverse categories for all types of digital content", "Simple upload and management of your digital products"].map((feature, index) => <li key={index} className="flex items-start">
                     <div className="mr-2 mt-0.5 rounded-full bg-white/20 p-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-white"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
                     </div>
                     <span className="text-white/90 text-sm">{feature}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CallToAction;

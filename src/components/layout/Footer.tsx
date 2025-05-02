@@ -1,16 +1,11 @@
-
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Youtube, Mail } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-gray-50 border-t">
+  return <footer className="bg-gray-50 border-t">
       <div className="container mx-auto py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-bold text-xl bg-gradient-to-r from-ct-blue-500 to-ct-teal-500 bg-clip-text text-transparent mb-4">
-              Create & Trade
-            </h3>
+            <h3 className="font-bold text-xl bg-gradient-to-r from-ct-blue-500 to-ct-teal-500 bg-clip-text text-transparent mb-4">Art Hive</h3>
             <p className="text-gray-600 mb-4">
               Empowering creators to showcase, sell, and engage with their audience through digital content.
             </p>
@@ -39,24 +34,17 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/category/templates" className="text-gray-600 hover:text-ct-blue-500">
-                  Templates
-                </Link>
+                <Link to="/category/templates" className="text-gray-600 hover:text-ct-blue-500">Comic books
+              </Link>
               </li>
               <li>
-                <Link to="/category/courses" className="text-gray-600 hover:text-ct-blue-500">
-                  Courses
-                </Link>
+                <Link to="/category/courses" className="text-gray-600 hover:text-ct-blue-500">Anime arts</Link>
               </li>
               <li>
-                <Link to="/category/e-books" className="text-gray-600 hover:text-ct-blue-500">
-                  E-books
-                </Link>
+                <Link to="/category/e-books" className="text-gray-600 hover:text-ct-blue-500">Sketch arts</Link>
               </li>
               <li>
-                <Link to="/featured" className="text-gray-600 hover:text-ct-blue-500">
-                  Featured Content
-                </Link>
+                <Link to="/featured" className="text-gray-600 hover:text-ct-blue-500">Wall arts</Link>
               </li>
             </ul>
           </div>
@@ -97,7 +85,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center text-gray-600">
                 <Mail size={16} className="mr-2" />
-                <span>support@createandtrade.lk</span>
+                <span>arthive@gmail.com</span>
               </li>
               <li className="text-gray-600">
                 123 Digital Avenue, Colombo 04
@@ -105,9 +93,7 @@ const Footer = () => {
               <li className="text-gray-600">
                 Sri Lanka
               </li>
-              <li className="text-gray-600">
-                Tel: +94 11 234 5678
-              </li>
+              <li className="text-gray-600">Tel: +94 752660551</li>
             </ul>
           </div>
         </div>
@@ -125,8 +111,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
