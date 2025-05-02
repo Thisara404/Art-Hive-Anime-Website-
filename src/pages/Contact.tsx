@@ -57,13 +57,13 @@ const Contact = () => {
                 {
                   icon: <Mail className="h-8 w-8 text-ct-blue-500" />,
                   title: "Email",
-                  details: "support@createandtrade.lk",
+                  details: "arthive@gmail.com",
                   description: "For general inquiries and support"
                 },
                 {
                   icon: <Phone className="h-8 w-8 text-ct-blue-500" />,
                   title: "Phone",
-                  details: "+94 11 234 5678",
+                  details: "+94 752660551",
                   description: "Monday-Friday, 9am-5pm"
                 },
                 {
