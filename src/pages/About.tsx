@@ -9,7 +9,7 @@ const About = () => {
       <div className="bg-gradient-to-b from-white to-gray-50 py-12 md:py-24">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center text-center mb-12">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">About Create & Trade</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">About Art Hive</h1>
             <p className="text-gray-500 max-w-2xl">
               The premier platform for digital creators in Sri Lanka and beyond
             </p>
@@ -19,7 +19,7 @@ const About = () => {
             <div>
               <h2 className="text-2xl font-bold mb-4">Our Story</h2>
               <p className="text-gray-600 mb-4">
-                Founded in 2023, Create & Trade was born out of a passion to support the growing community of digital creators in Sri Lanka. We recognized the need for a dedicated platform where artists, designers, educators, and other digital content creators could showcase their work and connect with potential buyers.
+                Founded in 2023, Art Hive was born out of a passion to support the growing community of digital creators in Sri Lanka. We recognized the need for a dedicated platform where artists, designers, educators, and other digital content creators could showcase their work and connect with potential buyers.
               </p>
               <p className="text-gray-600 mb-4">
                 Our mission is to democratize the digital marketplace, making it accessible to creators of all backgrounds and experience levels while providing buyers with high-quality, unique digital products.
@@ -32,7 +32,7 @@ const About = () => {
               <div className="border-2 border-ct-teal-500 bg-white rounded-xl p-2 shadow-lg">
                 <img 
                   src="/placeholder.svg" 
-                  alt="Create & Trade team" 
+                  alt="Art Hive team" 
                   className="rounded-lg w-full h-auto"
                 />
               </div>
@@ -111,7 +111,7 @@ const About = () => {
           <div className="bg-ct-blue-50 rounded-xl p-8 text-center">
             <h2 className="text-2xl font-bold mb-4">Join Our Creative Community</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mb-6">
-              Whether you're a creator looking to showcase your work or someone searching for unique digital content, Create & Trade welcomes you to be part of our growing community.
+              Whether you're a creator looking to showcase your work or someone searching for unique digital content, Art Hive welcomes you to be part of our growing community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild className="bg-ct-blue-500 hover:bg-ct-blue-600">
